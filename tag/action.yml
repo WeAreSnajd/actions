@@ -9,6 +9,9 @@ inputs:
     #myOutput:
     #description: 'Output to use'
     #default: 'none'
+env:
+  TAG:
+    default: 'world'
 runs:
   using: 'docker'
   image: 'Dockerfile'
