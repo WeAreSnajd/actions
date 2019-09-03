@@ -14,7 +14,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const myInput = core.getInput('myInput');
-            const tag = myInput.replace('e', 'E').replace('refs/tags/', '');
+            const tag = myInput.replace('refs/tags/', '');
             console.log(`Hello ${myInput} from inside a container`);
             // Get github context data
             const context = github.context;
