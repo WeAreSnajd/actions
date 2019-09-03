@@ -4,7 +4,7 @@ const github = require('@actions/github');
 async function run() {
   try {
     const myInput = core.getInput('myInput');
-    const tag = myInput.replace('e', 'E').replace('refs/tags/', '');
+    const tag = myInput.replace('refs/tags/', '');
     console.log(`Hello ${myInput} from inside a container`);
 
     // Get github context data
