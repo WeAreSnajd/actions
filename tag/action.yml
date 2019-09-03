@@ -5,6 +5,10 @@ inputs:
   myInput:
     description: 'Input to use'
     default: 'world'
+outputs:
+  myOutput:
+    description: 'Output to use'
+    default: 'none'
 runs:
   using: 'docker'
   image: 'Dockerfile'
